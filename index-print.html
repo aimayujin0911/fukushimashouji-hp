@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>福嶋商事様HP デザイン案 (印刷用)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Noto+Serif+JP:wght@300;400;500;600;700;900&family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  * { box-sizing: border-box; }
+  .ab-root { position: relative; overflow: hidden; background: #fff; width: 100%; height: 100%; }
+
+  /* Each variation lives on its own named page so the PDF page size matches
+     the artboard exactly. break-after: page forces a hard page break. */
+  .page { width: 1440px; overflow: hidden; break-after: page; page-break-after: always; }
+  .page:last-child { break-after: auto; page-break-after: auto; }
+
+  .page.v1 { height: 5640px; page: v1; }
+  .page.v2 { height: 4230px; page: v2; }
+  .page.v3 { height: 5900px; page: v3; }
+  .page.v4 { height: 4280px; page: v4; }
+  .page.h1 { height: 1320px; page: h1; }
+  .page.h2 { height: 1080px; page: h2; }
+  .page.h3 { height: 1080px; page: h3; }
+  .page.h4 { height: 1080px; page: h4; }
+  .page.h5 { height:  900px; page: h5; }
+  .page.h6 { height: 1280px; page: h6; }
+  .page.h7 { height: 1100px; page: h7; }
+  .page.h8 { height: 1100px; page: h8; }
+
+  .cover {
+    width: 1440px; height: 900px;
+    page: cover;
+    background: #fafaf6;
+    color: #1a1612;
+    font-family: "Shippori Mincho", "Noto Serif JP", serif;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center;
+    break-after: page;
+  }
+  .cover .eyebrow {
+    font-family: "Inter", sans-serif;
+    font-size: 12px; letter-spacing: 0.4em; color: #b91e1d; font-weight: 700; text-transform: uppercase;
+  }
+  .cover h1 { font-size: 80px; letter-spacing: 0.04em; margin: 24px 0 16px; font-weight: 600; }
+  .cover .sub { font-size: 16px; color: #555; max-width: 720px; line-height: 2.0; }
+  .cover .toc {
+    margin-top: 56px; padding-top: 32px; border-top: 1px solid #0e0e0d33;
+    display: grid; grid-template-columns: repeat(2, auto); gap: 12px 56px;
+    font-size: 14px; text-align: left;
+  }
+  .cover .toc b { color: #b91e1d; margin-right: 12px; font-family: "Bodoni Moda", serif; font-style: italic; }
+
+  @page cover { size: 1440px 900px; margin: 0; }
+  @page v1 { size: 1440px 5640px; margin: 0; }
+  @page v2 { size: 1440px 4230px; margin: 0; }
+  @page v3 { size: 1440px 5900px; margin: 0; }
+  @page v4 { size: 1440px 4280px; margin: 0; }
+  @page h1 { size: 1440px 1320px; margin: 0; }
+  @page h2 { size: 1440px 1080px; margin: 0; }
+  @page h3 { size: 1440px 1080px; margin: 0; }
+  @page h4 { size: 1440px 1080px; margin: 0; }
+  @page h5 { size: 1440px  900px; margin: 0; }
+  @page h6 { size: 1440px 1280px; margin: 0; }
+  @page h7 { size: 1440px 1100px; margin: 0; }
+  @page h8 { size: 1440px 1100px; margin: 0; }
+
+  @media print {
+    body { background: #fff !important; }
+    .page, .cover { box-shadow: none; }
+  }
+  @media screen {
+    body { background: #f0eee9; padding: 24px 0; }
+    .page, .cover { margin: 0 auto 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="variations/shared.jsx"></script>
+<script type="text/babel" src="variations/v1-traditional.jsx"></script>
+<script type="text/babel" src="variations/v2-modern.jsx"></script>
+<script type="text/babel" src="variations/v3-editorial.jsx"></script>
+<script type="text/babel" src="variations/v4-warm.jsx"></script>
+<script type="text/babel" src="variations/hero-patterns.jsx"></script>
+
+<script type="text/babel">
+  const PrintApp = () => {
+    return (
+      <React.Fragment>
+        <div className="cover">
+          <div className="eyebrow">○ Web Renewal Design Proposal</div>
+          <h1>株式会社 福嶋商事様<br/>HP リニューアル デザイン案</h1>
+          <div className="sub">
+            既存サイトの素材（ロゴ・写真・色＝truck red）を踏襲しつつ、雰囲気の異なる4つの方向性と、トップ画像（ヒーロー）のパターン8案をご提案します。
+          </div>
+          <div className="toc">
+            <div><b>A ─</b> 静寂・和の余白 — ミニマル和風／白</div>
+            <div><b>B ─</b> ポップ・元気 — 親しみやすい／カラフル</div>
+            <div><b>C ─</b> ダイナミック — Black × Red ／力強さ</div>
+            <div><b>D ─</b> ドキュメンタリー — B&amp;W／編集記事風</div>
+            <div><b>H1-8 ─</b> トップ画像パターン 8案</div>
+            <div><b>2026.05</b> Fukushima Shouji Co.,Ltd.</div>
+          </div>
+        </div>
+        <div className="page v1"><V1Traditional /></div>
+        <div className="page v2"><V2Modern /></div>
+        <div className="page v3"><V3Editorial /></div>
+        <div className="page v4"><V4Warm /></div>
+        <div className="page h1"><HeroP1Cinematic /></div>
+        <div className="page h2"><HeroP2Magazine /></div>
+        <div className="page h3"><HeroP3Friendly /></div>
+        <div className="page h4"><HeroP4Gallery /></div>
+        <div className="page h5"><HeroP5Brush /></div>
+        <div className="page h6"><HeroP6Scenic /></div>
+        <div className="page h7"><HeroP7Poster /></div>
+        <div className="page h8"><HeroP8News /></div>
+      </React.Fragment>
+    );
+  };
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<PrintApp />);
+
+  // Auto-print after fonts + images are ready
+  (async () => {
+    try {
+      if (document.fonts && document.fonts.ready) await document.fonts.ready;
+      const imgs = Array.from(document.images);
+      await Promise.all(imgs.map(img => img.complete
+        ? Promise.resolve()
+        : new Promise(res => { img.addEventListener('load', res, { once: true }); img.addEventListener('error', res, { once: true }); })));
+      await new Promise(r => setTimeout(r, 500));
+      window.print();
+    } catch (e) {
+      console.error('Print prep failed:', e);
+    }
+  })();
+</script>
+</body>
+</html>
