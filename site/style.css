@@ -171,7 +171,7 @@ table.spec td{color:#fff;font-family:"Inter",sans-serif;font-size:13px}
 .cine .hero-h,.phero h1,.cine h3.h{text-shadow:0 2px 28px rgba(0,0,0,.55)}
 /* over photography (often a RED truck) accent words stay white; red lives in solid bars/buttons */
 .cine .hero-h .red,.phero h1 .red,.cine h3.h .red,.band h3 .red{color:#fff}
-.cine .hero-h .red,.phero h1 .red{border-bottom:5px solid var(--red);padding-bottom:2px}
+.cine .hero-h .red,.phero h1 .red{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:.045em;text-underline-offset:.14em}
 .ticks .red{color:#d6d6da}
 .crumb{text-shadow:0 1px 10px rgba(0,0,0,.7)}
 
