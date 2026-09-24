@@ -2,7 +2,7 @@
 // Logo: red brushstroke calligraphy (株式会社 福嶋商事) for impact,
 //        small dark version for compact headers.
 
-const ASSETS = 'assets/images';
+const ASSETS = '../assets/images';
 
 const Logo = ({ variant = 'large', height = 36, style = {} }) => {
   // 'large' = red brush 1920x239 (use for hero); 'small' = dark header version 368x40

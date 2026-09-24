@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>お問い合わせ ｜ 株式会社 福嶋商事</title>
+<meta name="description" content="運送のご依頼・お見積り、倉庫保管のご相談はこちら。株式会社福嶋商事 TEL 048-229-3130（平日9:00〜18:00）。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Bodoni+Moda:ital,wght@0,700;1,400;1,700&display=swap" />
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<header class="hdr"><div class="hdr-in">
+<a href="../"><img class="logo" src="../assets/images/logos/site-logo.png" alt="株式会社 福嶋商事" /></a>
+<nav><span class="drop"><a href="../business/">事業内容<i class="cv">▾</i></a><span class="sub"><a href="../business/#transport">一般貨物運送</a><a href="../business/#warehouse">倉庫保管事業</a><a href="../business/#logistics">貨物利用運送</a><a href="../business/#vehicle">車両紹介</a><a href="../business/#network">対応エリア・拠点</a></span></span><a href="../safety/">安全の取り組み</a><a href="../company/">会社概要</a><a href="https://fukushimashouji-recruit.com/" target="_blank" rel="noopener">採用情報</a><a href="../contact/" aria-current="page">お問い合わせ</a></nav>
+<div class="hdr-r"><img src="../assets/images/external/impul.png" alt="TEAM IMPUL" /><a class="btn" href="tel:0482293130">TEL 048-229-3130</a><button class="nav-tg" type="button" aria-label="メニューを開く" aria-expanded="false" onclick="var h=this.closest('.hdr');var o=h.classList.toggle('open');this.setAttribute('aria-expanded',o)"><span></span></button></div>
+</div></header>
+
+<section class="phero" style="height:340px">
+<img src="../assets/images/photos/vehicle-2.webp" alt="お問い合わせ" /><div class="veil"></div>
+<div class="lb-t" style="height:40px"></div><div class="lb-b" style="height:40px"></div>
+<div class="ticks"><span>● SCENE 06</span><span class="red">CONTACT</span><span>23.98 fps</span></div>
+<div class="phero-copy" style="bottom:66px"><div class="crumb"><a href="../">HOME</a> / CONTACT</div>
+<h1 class="h" style="font-size:clamp(36px,5vw,68px)">お問い合わせ</h1></div>
+</section>
+
+<!-- direct contact -->
+<section style="background:var(--red);color:#fff;padding:26px 48px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap">
+<div style="font-family:'Shippori Mincho',serif;font-size:20px;font-weight:600">運送・お見積りのご相談はお電話でも承ります</div>
+<div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap"><a href="tel:0482293130" class="disp" style="color:#fff;font-size:38px;line-height:1">048-229-3130</a><span style="font-size:13px">平日 9:00 – 18:00</span></div>
+</section>
+
+<section class="sec" style="display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start">
+<!-- FORM -->
+<div>
+<div class="eyebrow red">01 / FORM</div>
+<h2 class="h" style="font-size:clamp(28px,3.8vw,48px);margin:14px 0 12px">フォームでのお問い合わせ</h2>
+<p class="body" style="font-size:14.5px;margin-bottom:10px">お仕事に関するご相談・ご質問、採用に関するご連絡は下記のフォームよりお気軽にお問い合わせください。</p>
+<p style="font-size:13px;color:var(--silver);margin-bottom:34px">※弊社への輸送の案件、ドライバー応募者以外の営業メールは固くお断りします。</p>
+
+<form class="form f" id="contact-form" action="../contact-send.php" method="post">
+<div><label for="type">お問い合わせ種別<span class="req">*</span></label>
+<select id="type" name="type" required>
+<option value="">選択してください</option>
+<option value="運送のご依頼・お見積り">運送のご依頼・お見積り</option>
+<option value="倉庫保管のご相談">倉庫保管のご相談</option>
+<option value="貨物利用運送のご相談">貨物利用運送のご相談</option>
+<option value="採用について">採用について</option>
+<option value="その他">その他</option>
+</select></div>
+
+<div class="f2">
+<div><label for="name">お名前<span class="req">*</span></label><input id="name" name="name" type="text" required autocomplete="name" placeholder="山田 太郎" /></div>
+<div><label for="kana">フリガナ</label><input id="kana" name="kana" type="text" placeholder="ヤマダ タロウ" /></div>
+</div>
+
+<div><label for="company">法人様名</label><input id="company" name="company" type="text" autocomplete="organization" placeholder="株式会社◯◯" /></div>
+
+<div class="f2">
+<div><label for="tel">電話番号<span class="req">*</span></label><input id="tel" name="tel" type="tel" required autocomplete="tel" placeholder="090-0000-0000" /></div>
+<div><label for="fax">FAX番号</label><input id="fax" name="fax" type="tel" placeholder="048-000-0000" /></div>
+</div>
+
+<div><label for="email">メールアドレス<span class="req">*</span></label><input id="email" name="email" type="email" required autocomplete="email" placeholder="info@example.co.jp" /></div>
+
+<div class="f2">
+<div><label for="from">集荷地</label><input id="from" name="from" type="text" placeholder="埼玉県越谷市" /></div>
+<div><label for="to">配送先</label><input id="to" name="to" type="text" placeholder="神奈川県横浜市" /></div>
+</div>
+
+<div><label for="cargo">荷物の内容・数量</label><input id="cargo" name="cargo" type="text" placeholder="例：パレット12枚／要ゲート車" /></div>
+
+<div><label for="msg">お問い合わせ内容<span class="req">*</span></label><textarea id="msg" name="msg" required placeholder="ご希望の日程、車格、その他ご要望をご記入ください。"></textarea></div>
+
+<div style="position:absolute;left:-9999px" aria-hidden="true"><label for="website">website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
+
+<label style="display:flex;align-items:center;gap:12px;letter-spacing:0;text-transform:none;font-size:13.5px;color:var(--fog);font-family:inherit;font-weight:400;margin:0">
+<input type="checkbox" name="agree" value="1" required style="width:18px;height:18px;accent-color:var(--red)" />
+<span><a href="#privacy">個人情報保護方針</a>に同意します</span></label>
+
+<button class="btn" type="submit" id="submit-btn" style="padding:20px 40px;font-size:13px;justify-self:start">送信する →</button>
+<p id="form-msg" role="status" style="display:none;font-size:14px;font-weight:600"></p>
+</form>
+</div>
+
+<!-- SIDE -->
+<aside style="display:grid;gap:24px">
+<div class="card"><div class="bd" style="padding:30px 28px">
+<div class="eyebrow red" style="font-size:10px">02 / BY PHONE</div>
+<h3 style="margin-top:12px">お急ぎの方はお電話で</h3>
+<a href="tel:0482293130" class="disp" style="display:block;font-size:36px;margin-top:14px">048-229-3130</a>
+<p style="margin-top:10px">平日 9:00 – 18:00。当日便・急な増便もまずはご相談ください。</p>
+</div></div>
+
+<div class="card"><div class="bd" style="padding:30px 28px">
+<div class="eyebrow red" style="font-size:10px">03 / RECRUIT</div>
+<h3 style="margin-top:12px">採用のご応募</h3>
+<p style="margin-top:10px">ドライバー募集の詳細・ご応募は採用サイトをご覧ください。</p>
+<a class="btn btn-o" href="https://fukushimashouji-recruit.com/" target="_blank" rel="noopener" style="margin-top:18px">採用サイトを見る →</a>
+</div></div>
+
+<div class="card"><div class="bd" style="padding:30px 28px">
+<div class="eyebrow red" style="font-size:10px">04 / HEAD OFFICE</div>
+<h3 style="margin-top:12px">本社</h3>
+<p style="margin-top:10px">〒333-0817<br />埼玉県川口市戸塚南1-1-32<br />TEL 048-229-3130<br />FAX 048-229-3630</p>
+<div style="margin-top:18px;height:170px;overflow:hidden;border:1px solid var(--line)"><img src="../assets/images/photos/office-kawaguchi.webp" alt="本社" style="width:100%;height:100%;object-fit:cover" /></div>
+</div></div>
+</aside>
+</section>
+
+<!-- Offices contact list -->
+<section class="sec sec-line">
+<div class="sec-hd"><div><div class="eyebrow red">05 / DIRECT LINES</div><h2 class="h" style="margin-top:12px">各営業所 連絡先</h2></div><span class="eyebrow" style="color:var(--silver)">6 BASES</span></div>
+<table class="t">
+<tr><th>本社</th><td>埼玉県川口市戸塚南1-1-32 ／ TEL <a class="mono" href="tel:0482293130">048-229-3130</a> ／ FAX 048-229-3630</td></tr>
+<tr><th>本社営業所</th><td>埼玉県越谷市新川町2-366 ／ TEL <a class="mono" href="tel:0489601001">048-960-1001</a> ／ FAX 048-966-5005</td></tr>
+<tr><th>湘南営業所</th><td>神奈川県伊勢原市下落合6-1-302 ／ TEL <a class="mono" href="tel:0463745255">0463-74-5255</a> ／ FAX 0463-74-5266</td></tr>
+<tr><th>習志野営業所</th><td>千葉県八千代市吉橋1103-9 ／ TEL <a class="mono" href="tel:0474065512">047-406-5512</a> ／ FAX 047-406-5513</td></tr>
+<tr><th>群馬営業所</th><td>群馬県邑楽郡邑楽町赤堀3694-7 ／ TEL <a class="mono" href="tel:0276550860">0276-55-0860</a> ／ FAX 0276-55-0890</td></tr>
+<tr><th>つくば営業所</th><td>茨城県常総市新石下3925 ／ TEL <a class="mono" href="tel:0297444125">0297-44-4125</a> ／ FAX 0297-44-4126</td></tr>
+</table>
+</section>
+
+<section class="sec sec-line" id="privacy">
+<div class="eyebrow red">06 / PRIVACY POLICY</div>
+<h2 class="h" style="font-size:clamp(24px,3vw,38px);margin:14px 0 20px">個人情報保護方針</h2>
+<div class="body" style="font-size:14px;max-width:900px;line-height:1.95">
+<p>私たちは個人の人格尊重の理念のもとに、個人情報保護に関する法令を遵守して、お客様からご提供いただいた個人情報を適切に管理し、以下のとおり取り扱います。</p>
+<p style="margin-top:14px"><strong>1. 個人情報の取得について</strong><br />お客様から個人情報を取得する場合は、利用目的を特定し、ご本人に通知もしくは公表したうえで、お客様のご判断によりご提供いただくことを原則といたします。</p>
+<p style="margin-top:10px"><strong>2. 個人情報の利用について</strong><br />ご提供いただいた個人情報は、法令に従う場合を除き、あらかじめ通知・公表した利用目的以外に利用することはありません。</p>
+<p style="margin-top:10px"><strong>3. 個人情報の管理について</strong><br />ご提供いただいた個人情報の、紛失、漏洩、改ざん、破壊等を防止するため、適切かつ合理的な安全管理対策を実施します。</p>
+<p style="margin-top:10px"><strong>4. 第三者への開示について</strong><br />ご提供いただいた個人情報は、ご本人のご同意をいただいた場合、または法令に基づく場合を除き第三者に開示、提供いたしません。</p>
+<p style="margin-top:10px"><strong>5. 開示、訂正等、利用停止等について</strong><br />ご提供いただいた個人情報の開示、訂正・追加・削除、利用停止等につき、ご本人からご要望をいただいた場合には、法令に従い適切に対応させていただきます。</p>
+</div>
+</section>
+
+<footer class="foot"><div class="foot-in">
+<div><img class="logo" src="../assets/images/logos/site-logo.png" alt="株式会社 福嶋商事" /><div class="adr" style="margin-top:16px">〒333-0817 埼玉県川口市戸塚南1-1-32<br />TEL 048-229-3130 / FAX 048-229-3630</div></div>
+<nav><a href="../business/">事業内容</a><a href="../company/">会社概要</a><a href="../business/#vehicle">車両紹介</a><a href="https://fukushimashouji-recruit.com/" target="_blank" rel="noopener">採用情報</a><a href="../safety/">安全の取り組み</a><a href="../contact/">お問い合わせ</a></nav>
+</div><div class="cp">© 2026 FUKUSHIMA SHOUJI CO.,LTD.</div></footer>
+
+<script>
+(function(){
+  var f=document.getElementById('contact-form'),b=document.getElementById('submit-btn'),m=document.getElementById('form-msg');
+  var t=new URLSearchParams(location.search).get('type');if(t){var s=document.getElementById('type');if(s)s.value=t}
+  function show(ok,txt){m.style.display='block';m.style.color=ok?'var(--red)':'#ff8a8a';m.textContent=txt}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();b.disabled=true;b.textContent='送信中…';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){return r.json().then(function(j){if(!r.ok||!j.ok)throw new Error(j.error||'送信に失敗しました');return j})})
+      .then(function(){f.reset();show(true,'送信ありがとうございました。担当者より折り返しご連絡いたします。');b.textContent='送信しました'})
+      .catch(function(err){show(false,err.message+' お手数ですがお電話（048-229-3130）でもお問い合わせいただけます。');b.disabled=false;b.textContent='送信する →'});
+  });
+})();
+</script>
+</body>
+</html>
